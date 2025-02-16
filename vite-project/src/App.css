@@ -1,6 +1,38 @@
-.name-container {
-    color: blue;
+/* Centering everything */
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling the heading */
+  h1 {
+    color: #333;
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05);
+  }
+  
+  /* Button active effect */
+  button:active {
+    transform: scale(0.95);
   }
   
