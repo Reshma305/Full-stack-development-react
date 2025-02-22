@@ -2,20 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-function ThemeChanger() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
+const Form = () => {
   return (
-    <div className={darkMode ? "dark-theme" : "light-theme"}>
-      <h1>{darkMode ? "Dark Mode" : "Light Mode"}</h1>
-      <button onClick={toggleTheme} className="toggle-button">
-        Toggle Mode
-      </button>
+    <div className="form-container">
+      <h2>User Details Form</h2>
+      <form>
+        <div className="form-group">
+          <label>Name:</label>
+          <input
+            type="text"
+            name="name"
+            onChange={(e) => console.log("Name:", e.target.value)} />
+        </div>
+        <div className="form-group">
+          <label>Department:</label>
+          <input
+            type="text"
+            name="department"
+            onChange={(e) => console.log("Department:", e.target.value)} />
+        </div>
+      </form>
     </div>
   );
 }
-export default ThemeChanger;
+
+export default Form;

@@ -1,34 +1,26 @@
-.light-theme {
-  background-color: #ADD8E6; 
-  color: black;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.dark-theme {
-  background-color: #333;
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.toggle-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  margin-top: 10px;
+  background-color: lightblue;
+  text-align: center;
 }
 
-.toggle-button:hover {
-  background-color: #0056b3;
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
