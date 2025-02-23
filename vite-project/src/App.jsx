@@ -2,28 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-const Form = () => {
+import Comp1 from "./Comp1";
+const App = () => {
   return (
-    <div className="form-container">
-      <h2>User Details Form</h2>
-      <form>
-        <div className="form-group">
-          <label>Name:</label>
-          <input
-            type="text"
-            name="name"
-            onChange={(e) => console.log("Name:", e.target.value)} />
-        </div>
-        <div className="form-group">
-          <label>Department:</label>
-          <input
-            type="text"
-            name="department"
-            onChange={(e) => console.log("Department:", e.target.value)} />
-        </div>
-      </form>
+    <div>
+      <Comp1 />
     </div>
   );
-}
+};
 
-export default Form;
+export default App;
